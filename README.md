@@ -47,6 +47,24 @@ beacon('http://example.com/poke', function () {
 });
 ```
 
+Last but not least, the suggested code to handle the response on the server
+using Node.js
+
+```js
+require('http').createServer(function (req, res) {
+  res.statusCode = 404;
+  if (req.url !== '/poke') return res.end('404');
+
+  //
+  // The actual code that handles the beacon, the code above is just routing of
+  // the url..
+  //
+  res.statusCode = 204;                       // This prevents the need to send a body.
+  res.setHeader('Cache-Control', 'no-cache'); // Browsers should never cache this.
+  res.end(''); 
+});
+```
+
 ## License
 
 MIT
