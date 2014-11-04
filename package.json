@@ -1,0 +1,26 @@
+{
+  "name": "beacons",
+  "version": "0.0.0",
+  "description": "Minimalistic one way communication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unshiftio/beacons"
+  },
+  "keywords": [
+    "beacon",
+    "beacons"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unshiftio/beacons/issues"
+  },
+  "homepage": "https://github.com/unshiftio/beacons",
+  "dependencies": {
+    "one-time": "0.0.x"
+  }
+}
