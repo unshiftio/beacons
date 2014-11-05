@@ -14,6 +14,9 @@ When you receive a beacon request on your server make sure you:
   headers are not needed and only add pointless bandwidth to these micro
   requests.
 
+Once the `beacon` specification lands in the browsers we will start supporting
+it transparently. See http://w3c.github.io/beacon/ for the current working draft.
+
 ## Installation
 
 This module is only written for browser usage and assumes that a node.js module
