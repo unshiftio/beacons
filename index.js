@@ -8,6 +8,7 @@ var one = require('one-time');
  * @param {String} url The URL we want to reach.
  * @param {Function} fn Optional completion callback.
  * @param {Number} timeout Optional timeout before callback is invoked.
+ * @returns {Image} Image instance that we used to request data.
  * @api public
  */
 module.exports = function beacon(url, fn, timeout) {
@@ -27,4 +28,6 @@ module.exports = function beacon(url, fn, timeout) {
   time = setTimeout(function timeout() {
     fn(new Error('Beacon request timed out'));
   }, timeout || 1000);
+
+  return img;
 };
