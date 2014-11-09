@@ -1,5 +1,7 @@
 # Beacons
 
+[![Made by unshift](https://img.shields.io/badge/made%20by-unshift-00ffcc.svg?style=flat-square)](http://unshift.io)[![Version npm](http://img.shields.io/npm/v/beacons.svg?style=flat-square)](http://browsenpm.org/package/beacons)[![Build Status](http://img.shields.io/travis/unshiftio/beacons/master.svg?style=flat-square)](https://travis-ci.org/unshiftio/beacons)[![Dependencies](https://img.shields.io/david/unshiftio/beacons.svg?style=flat-square)](https://david-dm.org/unshiftio/beacons)[![Coverage Status](http://img.shields.io/coveralls/unshiftio/beacons/master.svg?style=flat-square)](https://coveralls.io/r/unshiftio/beacons?branch=master)[![IRC channel](http://img.shields.io/badge/IRC-irc.freenode.net%23unshift-00a8ff.svg?style=flat-square)](http://webchat.freenode.net/?channels=unshift)
+
 Beacons is small library to send beacons to your server. It's basically a really
 minimal way of doing one way communication in browsers without any dependency on
 XHR requests or what ever. Internally it will use `Image` to do the actual
