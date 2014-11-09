@@ -4,7 +4,10 @@
   "description": "Minimalistic one way communication",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec --ui bdd test.js",
+    "watch": "mocha --watch --reporter spec --ui bdd test.js",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- --reporter spec --ui bdd test.js",
+    "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- --reporter spec --ui bdd test.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,12 @@
     "url": "https://github.com/unshiftio/beacons/issues"
   },
   "homepage": "https://github.com/unshiftio/beacons",
+  "devDependencies": {
+    "assume": "0.0.x",
+    "istanbul": "0.3.x",
+    "mocha": "2.0.x",
+    "pre-commit": "0.0.x"
+  },
   "dependencies": {
     "one-time": "0.0.x"
   }
