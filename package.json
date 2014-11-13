@@ -1,6 +1,6 @@
 {
   "name": "beacons",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Minimalistic one way communication",
   "main": "index.js",
   "scripts": {
