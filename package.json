@@ -30,6 +30,6 @@
     "pre-commit": "~1.2.0"
   },
   "dependencies": {
-    "one-time": "0.0.x"
+    "one-time": "~1.0.0"
   }
 }
